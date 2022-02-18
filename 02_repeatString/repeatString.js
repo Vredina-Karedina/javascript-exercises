@@ -5,7 +5,7 @@ const repeatString = function (string, num) {
             received = received.concat('', string);
         }
         return received;
-    } else if (num === null || num === 0 || num === '') {
+    } else if (string === null || string === '' || num === null || num === 0 || num === '') {
         return '';
     } else {
         return 'ERROR';

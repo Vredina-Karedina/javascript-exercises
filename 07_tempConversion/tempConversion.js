@@ -1,13 +1,9 @@
 const ftoc = function (fah) {
-    const fahrenheitToCelsius = (fah - 32) * 5 / 9;
-    const roundToFirstDecimal = Math.round(fahrenheitToCelsius * 10) / 10;
-    return roundToFirstDecimal;
+  return Math.round((fah - 32) * 5 / 9 * 10) / 10;
 };
 
 const ctof = function (cel) {
-    const celsiusToFahrenheit = cel * 9 / 5 + 32;
-    const roundToFirstDecimal = Math.round(celsiusToFahrenheit * 10) / 10;
-    return roundToFirstDecimal;
+  return Math.round((cel * 9 / 5 + 32) * 10) / 10;
 };
 
 // Do not edit below this line
